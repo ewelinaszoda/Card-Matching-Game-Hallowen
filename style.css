@@ -9,3 +9,18 @@
   src: url("Assets/Fonts/Lunacy.woff") format("woff"),
        url("Assets/Fonts/Lunacy.woff2") format("woff2");
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  cursor: url(Assets/Cursors/Ghost.cur), auto;
+  font-family: Lunacy;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(#9D5900, #3D2200);
+}
