@@ -43,3 +43,19 @@ body {
   color: #FFBB89;
   font-size: 4em;
 }
+
+.game-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  cursor: url("Assets/Cursors/GhostHover.cur"), auto;
+  height: 175px;
+  width: 125px;
+}
