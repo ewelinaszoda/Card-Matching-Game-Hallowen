@@ -38,3 +38,8 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.game-info {
+  color: #FFBB89;
+  font-size: 4em;
+}
