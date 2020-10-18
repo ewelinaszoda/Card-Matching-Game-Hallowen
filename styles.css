@@ -16,8 +16,8 @@
 
 html {
   min-height: 100vh;
-  cursor: url(Assets/Cursors/Ghost.cur), auto;
-  font-family: Lunacy;
+  /* cursor: url(Assets/Cursors/Ghost.cur), auto;
+  font-family: Lunacy; */
 }
 
 body {
@@ -40,6 +40,7 @@ body {
 }
 
 .game-info {
+  font-family: Lunacy, serif;
   color: #FFBB89;
   font-size: 4em;
 }
@@ -50,11 +51,11 @@ body {
   grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
   justify-content: center;
-  perspective: 500px;
+  /* perspective: 500px; */
 }
 
 .card {
-  position: relative;
+  /* position: relative; */
   background-color: black;
   height: 175px;
   width: 125px;
