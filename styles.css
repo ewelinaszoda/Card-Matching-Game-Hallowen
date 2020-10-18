@@ -89,6 +89,13 @@ body {
   position: absolute;
   width: 47px;
   height: 47px;
+  transition: width 100ms ease-in-out, height 100ms
+  ease-in-out;
+}
+
+.card-back:hover .cob-web {
+  width: 52px;
+  height: 52px;
 }
 
 .cob-web-top-left {
