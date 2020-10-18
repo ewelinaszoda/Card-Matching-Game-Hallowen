@@ -71,6 +71,14 @@ body {
   align-items: center;
   overflow: hidden;
   backface-visibility: hidden;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solidl;
+}
+
+.card-back {
+  background-color: black;
+  border-color: #FFBB89;
 }
 
 .card-front {
@@ -91,7 +99,8 @@ body {
 
 .cob-web-top-right {
   top: 0;
-  left: 0;
+  /* left: 0; */
+  left: 85px;
 }
 
 .cob-web-bottom-left {
