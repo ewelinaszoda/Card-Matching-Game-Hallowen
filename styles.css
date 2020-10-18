@@ -95,6 +95,14 @@ body {
   transform: rotateY(180deg);
 }
 
+.card-value {
+  transform: scale(.9);
+}
+
+.card-front:hover .card-value {
+  transform: scale(1);
+}
+
 .cob-web {
   position: absolute;
   width: 47px;
