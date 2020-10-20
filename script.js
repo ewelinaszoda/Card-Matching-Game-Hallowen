@@ -65,5 +65,15 @@ class MixOrMatch {
               this.gameOver();
       }, 1000);
   }
+  gameOver() {
+      clearInterval(this.countdown);
+      this.audioController.gameOver();
+      document.getElementById('game-over-text').classList.add('visible');
+  }
+  victory() {
+      clearInterval(this.countdown);
+      this.audioController.victory();
+      document.getElementById('victory-text').classList.add('visible');
+  }
 
 }
