@@ -81,5 +81,19 @@ class MixOrMatch {
         card.classList.remove('matched');
     });
 }
+flipCard(card) {
+  if(this.canFlipCard(card)) {
+      this.audioController.flip();
+      this.totalClicks++;
+      this.ticker.innerText = this.totalClicks;
+      card.classList.add('visible');
+
+      if(this.cardToCheck) {
+          this.checkForCardMatch(card);
+      } else {
+          this.cardToCheck = card;
+      }
+  }
+}
 
 }
