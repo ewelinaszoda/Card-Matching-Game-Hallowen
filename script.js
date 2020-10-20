@@ -75,5 +75,11 @@ class MixOrMatch {
       this.audioController.victory();
       document.getElementById('victory-text').classList.add('visible');
   }
+  hideCards() {
+    this.cardsArray.forEach(card => {
+        card.classList.remove('visible');
+        card.classList.remove('matched');
+    });
+}
 
 }
