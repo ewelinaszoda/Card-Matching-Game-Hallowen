@@ -30,3 +30,40 @@ class AudioController {
       this.gameOverSound.play();
   }
 }
+
+class MixOrMatch {
+  constructor(totalTime, cards) {
+      this.cardsArray = cards;
+      this.totalTime = totalTime;
+      this.timeRemaining = totalTime;
+      this.timer = document.getElementById('time-remaining')
+      this.ticker = document.getElementById('flips');
+      this.audioController = new AudioController();
+  }
+
+  startGame() {
+      this.totalClicks = 0;
+      this.timeRemaining = this.totalTime;
+      this.cardToCheck = null;
+      this.matchedCards = [];
+      this.busy = true;
+      setTimeout(() => {
+          this.audioController.startMusic();
+          this.shuffleCards(this.cardsArray);
+          this.countdown = this.startCountdown();
+          this.busy = false;
+      }, 500)
+      this.hideCards();
+      this.timer.innerText = this.timeRemaining;
+      this.ticker.innerText = this.totalClicks;
+  }
+  startCountdown() {
+      return setInterval(() => {
+          this.timeRemaining--;
+          this.timer.innerText = this.timeRemaining;
+          if(this.timeRemaining === 0)
+              this.gameOver();
+      }, 1000);
+  }
+
+}
